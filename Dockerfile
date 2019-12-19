@@ -12,4 +12,4 @@ RUN dotnet publish -c Release -o out
 # Build runtime image
 FROM microsoft/dotnet:2.2-aspnetcore-runtime
 WORKDIR /app
-CMD dotnet demo-net-core.dll
+CMD dotnet bin/debug/netcoreapp2.2/demo-net-core.dll
