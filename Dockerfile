@@ -1,9 +1,5 @@
-FROM mcr.microsoft.com/dotnet/core/aspnet:3.0 AS base
+FROM microsoft/dotnet:2.2-sdk AS build-env
 WORKDIR /app
-EXPOSE 80
-
-FROM mcr.microsoft.com/dotnet/core/sdk:3.0 AS build
-WORKDIR /src
 
 # Copy csproj and restore as distinct layers
 COPY *.csproj ./
@@ -16,5 +12,4 @@ RUN dotnet publish -c Release -o out
 # Build runtime image
 FROM microsoft/dotnet:2.2-aspnetcore-runtime
 WORKDIR /app
-COPY --from=build-env /app/out .
 CMD dotnet demo-net-core.dll
