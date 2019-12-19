@@ -15,4 +15,4 @@ WORKDIR /app
 COPY --from=build-env /app/out .
 # ENTRYPOINT ["dotnet", "demo-net-core.dll"]
 # heroku uses the following
-CMD dotnet demo-net-core.dll
+CMD ASPNETCORE_URLS=http://*:$PORT dotnet demo-net-core.dll
