@@ -12,8 +12,10 @@ This article with some tutorials will help you study and deploy a demo project:
 
 ### Keywords: 
 - ASP.NET Core
-- Docker
+- Docker container
+- Platform as a Service
 - Heroku
+- Continuous integration
 - CircleCI
 
 ---
@@ -21,18 +23,21 @@ This article with some tutorials will help you study and deploy a demo project:
 # Create a ASP.NET Core project then deploy to Heroku server via CircleCI continuous integration
 
 #### With these keywords, you learn a little bit about concepts. If you don't know it yet, please read some reference articles:
-- ASP.NET Core: is a cross-platform, high-performance, open-source framework for building modern, cloud-based, Internet-connected applications.
+- ASP.NET Core: is a cross-platform, high-performance, open-source framework for building modern, cloud-based, Internet-connected applications.\
 https://docs.microsoft.com/en-us/aspnet/core/?view=aspnetcore-2.2
 
-- Docker container: is a platform for developers and sysadmins to build, share, and run applications with containers. The use of containers to deploy applications is called containerization.
+- Docker container: is a platform for developers and sysadmins to build, share, and run applications with containers. The use of containers to deploy applications is called containerization.\
 https://docs.docker.com/get-started/
 
-- Heroku: is a container-based cloud Platform as a Service (PaaS). Developers use Heroku to deploy, manage, and scale modern apps.
+- Platform as a Service: that provides a platform allowing customers to develop, run, and manage applications without the complexity of building and maintaining the infrastructure typically associated with developing and launching an app.\
+https://en.wikipedia.org/wiki/Platform_as_a_service
+
+- Heroku: is a container-based cloud Platform as a Service (PaaS). Developers use Heroku as a server to deploy, manage, and scale modern apps.\
 https://www.heroku.com/about
 
 - Continuous integration: is a practice that encourages developers to integrate their code into a master branch of a shared repository early and often.
 
-- CircleCI: is a platform enables engineering teams with automation. CircleCI automates your software builds, tests, and deployments.
+- CircleCI: is a platform enables engineering teams with automation. CircleCI automates your software builds, tests, and deployments.\
 https://circleci.com/docs/2.0/about-circleci/#section=welcome
 
 
@@ -48,8 +53,8 @@ You will have Docker pack the web application inside of the container, and then 
 https://dotnet.microsoft.com/download/dotnet-core/2.2
 
 ### 2. Docker container
-- Download docker desktop compatible with your operating system:
-https://docs.docker.com/docker-for-windows/install/
+- Download docker desktop compatible with your operating system:\
+https://docs.docker.com/docker-for-windows/install/\
 https://docs.docker.com/docker-for-mac/install/
 
 ### 3. Your project idea
@@ -62,7 +67,7 @@ https://docs.docker.com/docker-for-mac/install/
 ### 1. You can get directly by using Fork the complete code of this article on GitHub to become your project that will be deployed:
 https://github.com/duycs/demo-net-core
 
-### 2. If don't Fork the article's project, you can create your project. 
+### 2. If don't fork the article's project, you can create your project. 
 #### 2.1 Create new project
 - Create a new folder for your project.
 - At the folder, open Command/Terminal then run this command to create a template webapi project:
@@ -134,7 +139,7 @@ https://id.heroku.com/login
 - Login to CircleCI with your Github:
 https://circleci.com/vcs-authorize/
 - Then grant authorization your Github Repository for CircleCI
-- On CircleCI dashboard, click ADD-PROJECTS, chooe your project which you want to deploy on Heroku, Click Set-Up-Project.
+- On CircleCI dashboard, click ADD-PROJECTS, chooe your project which you want to deploy on Heroku, click Set-Up-Project.
 - At Set up project, choose Operating System is Linux then click Start-building
 - After that is done, you will need to set up environment variables for your CircleCI project at Setting:
 ```
