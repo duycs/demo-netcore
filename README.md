@@ -1,5 +1,5 @@
 # demo-net-core
-This article with some tutorials will help you study and deploy a demo project:
+### This article with some tutorials will help you study and deploy a demo project:
 - Tutorial_20/12/2019: Create a ASP.NET Core project then deploy to Heroku server via CircleCI continuous integration.
 - Tutorial_x/x/x: Design a database that description your ideas.
 - Tutorial_x/x/x: Design some parttern and layer common for your project.
@@ -37,12 +37,12 @@ https://docs.docker.com/get-started/
 - Platform as a Service: that provides a platform allowing customers to develop, run, and manage applications without the complexity of building and maintaining the infrastructure typically associated with developing and launching an app.\
 https://en.wikipedia.org/wiki/Platform_as_a_service
 
-- Heroku: is a container-based cloud Platform as a Service (PaaS). Developers use Heroku (as a server/hosting) to deploy, manage, and scale modern apps.\
+- Heroku: is a container-based cloud *Platform as a Service (PaaS)*. Developers use Heroku (as a server/hosting) to deploy, manage, and scale modern apps.\
 https://www.heroku.com/about
 
-- Continuous integration: is a practice that encourages developers to integrate their code into a master branch of a shared repository early and often.
+- Continuous integration (CI): is a practice that encourages developers to integrate their code into a master branch of a shared repository early and often.
 
-- CircleCI: is a platform enables engineering teams with automation. CircleCI automates your software builds, tests, and deployments.\
+- CircleCI: is a platform enables engineering teams with automation and *continuous integration*. CircleCI automates your software builds, tests, and deployments.\
 https://circleci.com/docs/2.0/about-circleci/#section=welcome
 
 #### Now, when you already know about the concepts, you will use Heroku to host and run your ASP.NET Core application via CircleCI continuous integration:
@@ -62,7 +62,7 @@ https://docs.docker.com/docker-for-windows/install/\
 https://docs.docker.com/docker-for-mac/install/
 
 ### 3. Your project idea
-- Do you have any idea? 
+- Do you have any ideas? 
 - Let's do it to leaning and creativily!
 
 ## Steps
@@ -154,7 +154,7 @@ HEROKU_USERNAME: Your username should be your email that you use to sign in
 HEROKU_APP_NAME: The name that you used when you were creating new Heroku application.
 ```
 
-### 5. Coding and push to master branch, you will see the "continuous integration".
+### 5. Coding and push to master branch, you will see *Continuous-integration*.
 - Coding and push to master branch, after a few minutes, go to your Heroku application domain and enjoy your change!
 - The article's app can be found at: https://duycs-demo-net-core.herokuapp.com/
 
