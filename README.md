@@ -22,7 +22,12 @@ This article with some tutorials will help you study and deploy a demo project:
 #### Tutorial_20/12/2019
 # Create a ASP.NET Core project then deploy to Heroku server via CircleCI continuous integration
 
-#### With these keywords, you learn a little bit about concepts. If you don't know it yet, please read some reference articles:
+#### Criteria of this tutorial:
+- Help you choose a solution modern, cross-platform, automation to build your project.
+- For small-scale applications, everything is free, so good for study and make a demo.
+- Your application can access online, you will feel realistic and can share your ideas.
+
+#### Before starting, you learn a little bit about concepts with these keywords. If you don't know it yet, please read some reference articles and discuss with friends:
 - ASP.NET Core: is a cross-platform, high-performance, open-source framework for building modern, cloud-based, Internet-connected applications.\
 https://docs.microsoft.com/en-us/aspnet/core/?view=aspnetcore-2.2
 
@@ -32,7 +37,7 @@ https://docs.docker.com/get-started/
 - Platform as a Service: that provides a platform allowing customers to develop, run, and manage applications without the complexity of building and maintaining the infrastructure typically associated with developing and launching an app.\
 https://en.wikipedia.org/wiki/Platform_as_a_service
 
-- Heroku: is a container-based cloud Platform as a Service (PaaS). Developers use Heroku as a server to deploy, manage, and scale modern apps.\
+- Heroku: is a container-based cloud Platform as a Service (PaaS). Developers use Heroku (as a server/hosting) to deploy, manage, and scale modern apps.\
 https://www.heroku.com/about
 
 - Continuous integration: is a practice that encourages developers to integrate their code into a master branch of a shared repository early and often.
@@ -40,12 +45,11 @@ https://www.heroku.com/about
 - CircleCI: is a platform enables engineering teams with automation. CircleCI automates your software builds, tests, and deployments.\
 https://circleci.com/docs/2.0/about-circleci/#section=welcome
 
-
-#### You will use Heroku to host and run your ASP.NET Core application via CircleCI continuous integration:
+#### Now, when you already know about the concepts, you will use Heroku to host and run your ASP.NET Core application via CircleCI continuous integration:
 You will have Docker pack the web application inside of the container, and then use CircleCI to deploy the Docker container to Heroku Container Registry.
 
 
-## Setup your local development with
+## Setup your local development
 
 ### 1. ASP.NET Core running on .NET Core 
 - This demo is version 2.2, but you can use latest version.
@@ -68,12 +72,14 @@ https://docs.docker.com/docker-for-mac/install/
 https://github.com/duycs/demo-net-core
 
 ### 2. If don't fork the article's project, you can create your project. 
-#### 2.1 Create new project
+#### 2.1 Create new project ASP.NET Core
 - Create a new folder for your project.
 - At the folder, open Command/Terminal then run this command to create a template webapi project:
 ```
   dotnet new webapi
 ```
+- The project's name is named as folder name, you can use Visual-Studio-Code tool to open the folder then start development. 
+
 #### 2.2 Dockerize ASP.NET Core application
 - To dockerize your application, you need to create new Dockerfile in your project folder.
 - Here is a complete Dockerfile looks like:
