@@ -19,7 +19,7 @@ namespace demo_net_core
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>()
-                .UseUrls("http://localhost:5050");
+                .UseStartup<Startup>();
+                // .UseUrls("http://localhost:5050");
     }
 }
