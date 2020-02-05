@@ -1,16 +1,13 @@
-# demo-net-core
-### This article with some tutorials will help you study and deploy a demo project:
-- Tutorial_20/12/2019: Create a ASP.NET Core project then deploy to Heroku server via CircleCI continuous integration.
-- Tutorial_x/x/x: Design a database that description your ideas.
-- Tutorial_x/x/x: Design some parttern and layer common for your project.
-- Tutorial_x/x/x: Create a middle ware for authorization and authentication.
-- Tutorial_x/x/x: Create a RESTful API for your ideas.
-- Tutorial_x/x/x: Create a gRPC API for your ideas.
-- Tutorial_x/x/x: Create your Angular landing page then hosting to AWS-S3 service.
-- Tutorial_x/x/x: Use an ORM and implement CQRS.
-- Tutorial_x/x/x: ...
+# Demo Net core
+#### Create a ASP.NET Core project then deploy to Heroku server via CircleCI continuous integration
+---
 
-### Keywords: 
+#### Criteria
+- Help you choose a solution modern, cross-platform, automation to build your project
+- For small-scale applications, everything is free, so good for study and make a demo
+- Your application can access online, you will feel realistic and can share your ideas
+
+### Keywords
 - ASP.NET Core
 - Docker container
 - Platform as a Service
@@ -18,16 +15,7 @@
 - Continuous integration
 - CircleCI
 
----
-#### Tutorial_20/12/2019
-# Create a ASP.NET Core project then deploy to Heroku server via CircleCI continuous integration
-
-#### Criteria of this tutorial:
-- Help you choose a solution modern, cross-platform, automation to build your project.
-- For small-scale applications, everything is free, so good for study and make a demo.
-- Your application can access online, you will feel realistic and can share your ideas.
-
-#### Before starting, you learn a little bit about concepts with these keywords. If you don't know it yet, please read some reference articles and discuss with friends:
+#### Before starting, you learn a little bit about concepts with these keywords. If you don't know it yet, please read some reference articles and discuss with friends
 - ASP.NET Core: is a cross-platform, high-performance, open-source framework for building modern, cloud-based, Internet-connected applications.\
 https://docs.microsoft.com/en-us/aspnet/core/?view=aspnetcore-2.2
 
@@ -71,7 +59,7 @@ https://docs.docker.com/docker-for-mac/install/
 ### 1. You can get directly by using Fork the complete code of this article on GitHub to become your project that will be deployed:
 https://github.com/duycs/demo-net-core
 
-### 2. If don't fork the article's project, you can create your project. 
+### 2. If don't fork the article's project, you can create your project
 #### 2.1 Create new project ASP.NET Core
 - Create a new folder for your project.
 - At the folder, open Command/Terminal then run this command to create a template webapi project:
@@ -154,15 +142,14 @@ HEROKU_USERNAME: Your username should be your email that you use to sign in
 HEROKU_APP_NAME: The name that you used when you were creating new Heroku application.
 ```
 
-### 5. Coding and push to master branch, you will see *Continuous-integration*.
+### 5. Coding and push to master branch, you will see *Continuous-integration*
 - Coding and push to master branch, after a few minutes, go to your Heroku application domain and enjoy your change!
 - The article's app can be found at: https://duycs-demo-net-core.herokuapp.com/
 
-# References:
+# References
 - https://circleci.com/docs/2.0/configuration-reference/
 - https://devcenter.heroku.com/categories/reference
 - https://developer.okta.com/blog/2019/09/18/build-a-simple-dotnet-core-app-in-docker
 - https://softchris.github.io/pages/dotnet-dockerize.html#build-our-image-start-container
 - https://codingblast.com/hosting-asp-net-core-on-heroku-with-dockercircleci-for-free/
-
 ---
